@@ -75,9 +75,9 @@ print(f"The balance of {account1.get_holder_name()} is :"
 MpesaPaymentSystem
 account2=Customer(account_id=2,holder_name="Jennifer",balance=250,
                   phone_number=23456781)
-deposit=DepositTransaction(250)
-withdraw=WithdrawTransaction(200)
-
+deposit=DepositTransaction(200)
+withdraw=WithdrawTransaction(500)
+...
 deposit.execute(account2)
 withdraw.execute(account2)
 print(f"The balance of {account2.get_holder_name()} is"
